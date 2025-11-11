@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pelis Mancos</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #faf8f8;
+        margin: 0;
+        padding: 0;
+    }
+    .header-main {
+        background-color: #4CAF50;
+        color: white;
+        padding: 20px;
+        text-align: left;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 15px;
+        transition: all 0.3s ease;
+        text-align: leaft; 
+
+    }
+    nav ul li.scrolling { 
+        padding: 5px
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    .header-main img {
+        height: 152px; width: 1720px;
+        vertical-align: middle;
+        margin-top: 10px;
+    }
+    .header-main input[type="search"] {
+        padding: 1px;
+        margin-top: 20px;
+        width: 75%;
+        font-size: 20px;
+        border: none;
+        border-radius: 5px;
+    }
+    .title-de-categoria {
+        text-align: center;
+        color: #333;
+        margin-top: 30px;
+    }
+    article {
+        border: 56px solid #f7f6f6;
+        margin: 20px;
+        padding: 20px;
+        border-radius: 85px;
+        background-color: #cccccc;
+
+    }
+    article img {
+        max-width: 100%;
+        height: 600px; width: 400px;
+        display: block;
+        margin: 0 auto 10px;
+        flex-direction:row-reverse
+    }
+    article h3 {
+        color: #584c3ce7;
+        text-align: center;
+    }
+    article p {
+        color: #555;
+        text-align: center;
+    }
+    footer p {
+        font-style: italic;
+        text-align: center;
+    }
+
+
+    </style>
+</head>
+
+<body>
+    <!--Cara principar de la portado-->
+    <header class="header-main">
+    <h1>Bienvenido a Pelis Mancos</h1>
+        <img src="/plexi/img 09/logo de pleis.jpg" alt="Logo de Pelis Mancos">
+        <br>
+        <input type="search" placeholder="Buscar películas...">
+    <p>Tu destino número uno para las películas más entretenidas y divertidas.</p>
+    <NAv>
+        <ul>
+            <li><a href="#comedia">Comedia</a></li> 
+            <li><a href="#drama">Drama</a></li> 
+            <li><a href="#cienciaficcion">Ciencia Ficción</a></li> 
+            <li><a href="#animacion">Animación</a></li> 
+        </ul>
+        <!--pagina de servicios--> |
+        <a href="carpetas/Página de servicios.html">Página de servicios</a> |
+        <!--pagina de contacto-->   
+        <a href="carpetas/Página de contacto.html">Página de contacto</a>
+        
+    <br>
+    </NAv>
+    </header>
+    <!--Seccion de categorias de peliculas-->
+<section>
+ <h2 class="title-de-categoria">Nuestras categorías</h2>
+    <article>
+        <header>
+        <h3 id="comedia">Comedia</h3>
+        <img src="/plexi/img 09/comedia uno.jpg" alt="Películas de Comedia">
+            </header>
+        <p>Ríe a carcajadas con nuestras películas de comedia seleccionadas.</p>
+    </article>
+<br>
+    <article>
+        <header>
+        <h3 id="accion">Acción</h3>
+        <img src="/plexi/img 09/accion.jpg" alt="Películas de Acción">
+            </header>
+        <p>Vive la adrenalina con nuestras emocionantes películas de acción.</p>
+    </article>
+<br>
+    <article>
+        <header>
+        <h3 id="drama">Drama</h3>
+        <img src="/plexi/img 09/drama.jpg" alt="Películas de Drama">
+            </header>
+            <footer>
+        <p>Sumérgete en historias profundas con nuestras películas de drama.</p>
+        </footer>   
+    </article>
+<br>
+    <article>
+        <header>
+        <h3 id="cienciaficcion">Ciencia Ficción</h3>
+        <img src="/plexi/img 09/ciencia ficion.jpg" alt="Películas de Ciencia Ficción">
+            </header>
+        <footer>
+        <p>Explora nuevos mundos con nuestras películas de ciencia ficción.</p>
+        </footer>
+    </article>
+<br>
+    <article>
+        <header>
+        <h3 id="animacion">Animación</h3>
+        <img src="/plexi/img 09/animacion.jpg" alt="Películas de Animación">
+            </header>
+            <footer>
+        <p>Disfruta de la magia de la animación con nuestras películas favoritas.</p>
+        </footer>
+    </article>
+</section>
+
+
+
+
+    </body>
+</html>
