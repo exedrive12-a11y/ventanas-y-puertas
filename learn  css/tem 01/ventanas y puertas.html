@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es   ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VenderDoor</title>
+    <style>
+        body {
+            background-color: #f1faee;
+            font-family:'Times New Roman', Times, serif ;
+            margin: auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #a8dadc;
+            text-align: left;
+            margin-bottom: 30px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+            padding: 20px;
+        }
+        header img {
+                width: 100px;
+                height: auto;
+            }
+    
+        nav .navegacion {
+            margin-top: 10px;
+            flex-direction: row;
+            
+        }
+        section article {
+            margin-bottom: 40px;
+            justify-content: flex-start;
+            display: inline-block;
+            width: 30%;
+        }
+        article {
+            border: 2px solid #457b9d;
+            border-radius: 10px;
+            text-align: center;
+            padding: 15px;
+            margin-bottom: 20px;
+            background-color: #e0e0e0;
+        }
+        article img {
+            width: 200px;
+            height: auto;
+            display: block;
+            margin: 0 auto 10px;
+            max-width: 90%;
+            margin-bottom: 10px;
+        }
+        h1, h2, h3, h4 {
+            color: #1d3557;
+        }
+        p {
+            color: #333;
+        }   
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #457b9d;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }   
+        form {
+            display: block;
+
+            background-color: #a8dadc;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+
+        }
+        .container-form, .container-form-casilla {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], input[type="tel"], input[type="number"], select, textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        textarea {
+            height: 100px;
+        }
+        footer {
+            background-color: #a8dadc;
+            text-align: center;
+            padding: 10px;
+            margin-top: 30px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<header>
+    <h1>VenderDoor</h1>
+    <h2>la mejor tienen de ventas del mundo</h2>
+    <img src="img/logo.jpg" alt="Logo de VenderDoor">
+    
+    <nav class="navegacion">
+        <a href="index.html">Inicio</a>
+        <a href="productos">Productos</a>
+        <a href="contacto">Contacto</a>
+    </nav>
+</header>
+<body>
+<main>
+    <h3 id="productos" >Productos</h3>
+    <section>
+        <article>
+            <h4>Ventanas de PVC</h4>
+            <img src="img/Ventanas 1.jpg" alt="Ventana de PVC">
+            <p>Ventanas de alta calidad con excelente aislamiento térmico y acústico.</p>
+            <p>Precio: $150</p>
+        </article>
+        <article>
+            <h4>Puertas de Madera</h4>
+            <img src="img/Puerta 1.jpg" alt="Puerta de Madera">
+            <p>Puertas robustas y elegantes hechas de madera maciza.</p>
+            <p>Precio: $200</p>
+        </article>
+        <article>
+            <h4>Ventanas de Aluminio</h4>
+            <img src="img/Ventana 2.jpg" alt="Ventana de Aluminio">
+            <p>Ventanas duraderas y resistentes a la corrosión.</p>
+            <p>Precio: $180</p>
+        </article>
+        <article>
+            <h4>Puertas de Acero</h4>
+            <img src="img/Puerta 2.jpg" alt="Puerta de Acero">
+            <p>Puertas seguras y modernas con diseño contemporáneo.</p>
+            <p>Precio: $250</p>
+        </article>
+        <article>
+            <h4>Ventanas de Madera</h4>
+            <img src="img/Ventana 3.jpg" alt="Ventana de Madera">
+            <p>Ventanas clásicas con un toque natural y cálido.</p>
+            <p>Precio: $170</p>
+        </article>
+        <article>
+            <h4>Puertas de Vidrio</h4>
+            <img src="img/Puerta 3.jpg" alt="Puerta de Vidrio">
+            <p>Puertas elegantes que permiten la entrada de luz natural.</p>
+            <p>Precio: $220</p>     
+        </article>
+    </section>
+</main>    
+<br>
+<div>
+<!--tabla de productos-->
+    <table>
+        <tr>
+            <th>Producto</th>
+            <th>Descripción</th>
+            <th>Precio</th>
+        </tr>
+        <tr>
+            <td>Ventanas de PVC</td>
+            <td>Ventanas de alta calidad con excelente aislamiento térmico y acústico.</td>
+            <td>$150</td>
+        </tr>
+        <tr>
+            <td>Puertas de Madera</td>
+            <td>Puertas robustas y elegantes hechas de madera maciza.</td>
+            <td>$200</td>
+        </tr>
+        <tr>
+            <td>Ventanas de Aluminio</td>
+            <td>Ventanas duraderas y resistentes a la corrosión.</td>
+            <td>$180</td>
+        </tr>
+        <tr>
+            <td>Puertas de Acero</td>
+            <td>Puertas seguras y modernas con diseño contemporáneo.</td>
+            <td>$250</td>
+        </tr>
+        <tr>
+            <td>Ventanas de Madera</td>
+            <td>Ventanas clásicas con un toque natural y cálido.</td>
+            <td>$170</td>
+        </tr>
+        <tr>
+            <td>Puertas de Vidrio</td>
+            <td>Puertas elegantes que permiten la entrada de luz natural.</td>
+            <td>$220</td>     
+        </tr>
+    </table>
+</div>
+    <section>
+<!--parte de cotizacion-->
+        <form>
+    <h3>Formulario de Cotización</h3>
+    <div class="container-form">
+        <label for="nombre"> Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+    </div>
+    <div class="container-form-casilla">
+        <label for="email"> Email:</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+    <div class="container-form-casilla">   
+        <label for="telefono">Telefono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+    </div>
+    <div class="container-form-casilla">    
+        <label for="direccion">Direccion:</label>
+        <input type="text" id="direccion" name="direccion" required>
+    </div>
+    <!--Detalles de Productos-->
+    <br>
+    <h4>Información del Cliente</h4>
+    <div class="container-form-casilla">    
+        <label for="producto">Producto de Cotización:</label>
+        <input type="text" id="producto" name="producto" required>
+    </div class="container-form-casilla">
+    <h4>Detalles del Producto</h4>
+<select name="selecion-de-categoria" id="producto">
+    <option value="ventanas-pvc">Ventanas de PVC</option>
+    <option value="puertas-madera">Puertas de Madera</option>
+    <option value="ventanas-aluminio">Ventanas de Aluminio</option>
+    <option value="puertas-acero">Puertas de Acero</option>
+    <option value="ventanas-madera">Ventanas de Madera</option>
+    <option value="puertas-vidrio">Puertas de Vidrio</option>
+</select>
+    <div class="container-form-casilla">
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" id="cantidad" name="cantidad" required>
+        <!--Descripción Detallada del Producto-->
+    </div>
+    <div class="container-form-casilla"> 
+        <label for="Descripción-detallada">Descripción Detallada del Producto:</label>
+        <textarea name="Descripción-detallada" id="Descripción-detallada">
+        </textarea>
+    </div>
+<div>
+<!--Especificaciones Técnicas y Opciones Adicionales-->
+    <h4>Especificaciones Técnicas</h4>
+    <div class="container-form-casilla">
+        <label for="material">Material:</label>
+        <input type="text" id="material" name="material" required>  
+        <label for="Color">color:</label>
+        <input type="text" id="color" name="color" required>
+        <br>
+        <label for="Dimensiones">Dimensiones:</label>
+        <input type="text" placeholder="dimensiones" name="dimensiones" required>
+    </div>
+    <h4>Opciones Adicionales</h4>
+        <input type="checkbox" id="Diseño personalizado" name="Diseño personalizado">
+            <label for="Diseño personalizado">Diseño personalizado</label>
+            <br>
+        <input type="checkbox" id="Producción urgente" name="Producción urgente">
+            <label for="Producción urgente">Producción urgente</label>
+            <br>
+        <input type="checkbox" id="Incluye montaje/instalación" name="Incluye montaje/instalación">
+            <label for="Incluye montaje/instalación">Incluye montaje/instalación</label>
+            <br>
+        <input type="checkbox" id="Garantía extendida" name="Garantía extendida">
+            <label for="Garantía extendida">Garantía extendida</label>
+            
+</div>
+<br>
+<div class ="video producto">
+    <h4>Video del Producto</h4>
+    <video width="320" height="240" controls>
+        <source src="https://www.youtube.com/watch?v=Rv6uLSNK7yw" type="video/mp4">
+        Your browser does not support the video tag.
+    </form>
+    </section>
+<!--Telefono y Dirrecion-->
+    <footer>
+        <p>Teléfono: +34 123 456 789</p>
+        <p>Dirección: Calle Falsa 123, Ciudad, País</p>
+        <br>
+        <p>Email: ejemolo@gmail.con</p>
+    </footer>
+</body>
+</html>
