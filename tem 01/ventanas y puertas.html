@@ -17,7 +17,7 @@
             margin-bottom: 30px;
             font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-weight: bold;
-            padding: 10px;
+            padding: 20px;
         }
         header img {
                 width: 100px;
@@ -29,7 +29,83 @@
             flex-direction: row;
             
         }
+        section article {
+            margin-bottom: 40px;
+            justify-content: flex-start;
+            display: inline-block;
+            width: 30%;
+        }
+        article {
+            border: 2px solid #457b9d;
+            border-radius: 10px;
+            text-align: center;
+            padding: 15px;
+            margin-bottom: 20px;
+            background-color: #e0e0e0;
+        }
+        article img {
+            width: 200px;
+            height: auto;
+            display: block;
+            margin: 0 auto 10px;
+            max-width: 90%;
+            margin-bottom: 10px;
+        }
+        h1, h2, h3, h4 {
+            color: #1d3557;
+        }
+        p {
+            color: #333;
+        }   
         
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #457b9d;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }   
+        form {
+            display: block;
+
+            background-color: #a8dadc;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+
+        }
+        .container-form, .container-form-casilla {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], input[type="tel"], input[type="number"], select, textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        textarea {
+            height: 100px;
+        }
+        footer {
+            background-color: #a8dadc;
+            text-align: center;
+            padding: 10px;
+            margin-top: 30px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+        }
+
     </style>
 </head>
 <header>
@@ -167,7 +243,8 @@
         <input type="number" id="cantidad" name="cantidad" required>
         <!--Descripción Detallada del Producto-->
     </div>
-    <div class="container-form-casilla">
+    <div class="container-form-casilla"> 
+        <label for="Descripción-detallada">Descripción Detallada del Producto:</label>
         <textarea name="Descripción-detallada" id="Descripción-detallada">
         </textarea>
     </div>
@@ -181,7 +258,7 @@
         <input type="text" id="color" name="color" required>
         <br>
         <label for="Dimensiones">Dimensiones:</label>
-        <input type="text" id="dimensiones" name="dimensiones" required>
+        <input type="text" placeholder="dimensiones" name="dimensiones" required>
     </div>
     <h4>Opciones Adicionales</h4>
         <input type="checkbox" id="Diseño personalizado" name="Diseño personalizado">
@@ -195,7 +272,14 @@
             <br>
         <input type="checkbox" id="Garantía extendida" name="Garantía extendida">
             <label for="Garantía extendida">Garantía extendida</label>
+            
 </div>
+<br>
+<div class ="video producto">
+    <h4>Video del Producto</h4>
+    <video width="320" height="240" controls>
+        <source src="https://www.youtube.com/watch?v=Rv6uLSNK7yw" type="video/mp4">
+        Your browser does not support the video tag.
     </form>
     </section>
 <!--Telefono y Dirrecion-->
